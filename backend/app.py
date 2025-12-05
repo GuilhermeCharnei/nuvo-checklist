@@ -33,6 +33,21 @@ from pdf_parser import parse_pdf
 
 # ==================== ROTAS ====================
 
+@app.route('/', methods=['GET'])
+def index():
+    """Rota raiz - informações da API"""
+    return jsonify({
+        'name': 'NUVO Checklist API',
+        'version': '1.0.0',
+        'status': 'online',
+        'endpoints': {
+            'health': '/api/health',
+            'clients': '/api/clients',
+            'upload': '/api/upload (POST)'
+        },
+        'timestamp': datetime.utcnow().isoformat()
+    })
+
 @app.route('/api/health', methods=['GET'])
 def health_check():
     """Health check endpoint"""
