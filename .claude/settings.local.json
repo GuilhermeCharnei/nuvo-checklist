@@ -7,7 +7,11 @@
       "Bash(sshpass -p 'Infonuvo25!' ssh -p 65002 -o StrictHostKeyChecking=no u201435955@167.88.41.25 \"cd ~/nuvo-checklist && ls -la && chmod +x deploy/*.sh && echo ''✓ Permissões configuradas''\")",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
