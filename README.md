@@ -124,3 +124,4 @@ NEXT_PUBLIC_API_URL=http://localhost:5000/api
 ## 📄 Licença
 
 Propriedade de NUVO - Todos os direitos reservados
+# Deploy trigger
