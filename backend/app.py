@@ -31,6 +31,10 @@ from models import Client, Environment, Piece, Material, Progress
 # Importar parser de PDF
 from pdf_parser import parse_pdf
 
+# Criar tabelas do banco de dados (se não existirem)
+with app.app_context():
+    db.create_all()
+
 # ==================== ROTAS ====================
 
 @app.route('/', methods=['GET'])
